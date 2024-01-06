@@ -5,7 +5,7 @@ In the real-world, there are many ways to exploit via css injection. the way wha
 ```
 blob:https://example.com/f915e403-0d27-459d-8bc6-8a91ee491aaf
 ```
-If there is a blob-url as above, do you have any idea to leak the uuid via css injection? maybe you guys try to leak it like brute-force as `blob:https://example.com/a`, `blob:https://example.com/b`, `blob:https://example.com/c` while changing a character. well but you need to find next character even if you found the correct first character of the uuid like `blob:https://example.com/f`. however how can you make that css injection file recognizes the correct character of the uuid what you found before. 
+If there is a blob-url as above, do you have any idea to leak the uuid via css injection? maybe you guys try to leak it like brute-force as `blob:https://example.com/a`, `blob:https://example.com/b`, `blob:https://example.com/c` while changing a character. well but you need to find next character even if you've found the correct first character of the uuid like `blob:https://example.com/f`. however how can you make that css injection file recognizes the correct character of the uuid what you found before. 
 
 ```
 blob:https://example.com/f
