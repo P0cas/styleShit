@@ -60,7 +60,7 @@ def get():
     for data in leak_data():
         uuid = main_gen(data)
         if len(uuid) == BLOB_UUID_LENGTH:
-            print(f'cool, blob uuid. -> {main_gen(data)}')
+            print(f'cool, blob uuid. -> {uuid}')
         else:
             pass # returns nothing
             #print(f'hmm nothing -> {uuid}')
