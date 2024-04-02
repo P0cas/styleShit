@@ -22,3 +22,7 @@ f915e403-0d27-459d-8bc6-8a91ee491aaf
 f91 => 915 => 15e => 5e4
 ```
 you have to leak the number of all cases of the uuid which split to 3 characters then must find the last two characters of the first data and  the first two characters of the second data which are matching and link it. finally If you've already leaked the number of all cases of the uuid, try generating all uuids after giving the number of all cases a chance to be first.
+
+
+> [!NOTE]
+> sometimes you need to modify the code to suit your situation. u need to optimize or maxize your situation to match the conditions then you need to update a charset to the stuff you want in gen-ex-cssi.js
